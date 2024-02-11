@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women Collection</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        .cards {
+            display: grid;
+            grid-template-columns: 3fr 3fr 3fr 3fr;
+            gap: 30px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .card {
+            margin-bottom: 40px;
+        }
+        .img-1 {
+            background-image: url(sandals3.png);
+        }
+        .img-1:hover {
+            background-image: url(sandals3png.png);
+            transition: .15s ease-in-out;
+        }
+        .img-2 {
+            background-image: url(floral.png);
+        }
+        .img-2:hover {
+            background-image: url(midi.png);
+            transition: .15s ease-in-out;
+        }
+        .img-3 {
+            background-image: url(sneakers.png);
+        }
+        .img-3:hover {
+            background-image: url(shoes3.png);
+            transition: .15s ease-in-out;
+        }
+        .img-4 {
+            background-image: url(top.png);
+        }
+        .img-5 {
+            background-image: url(midi.png);
+        }
+        .img-6 {
+            background-image: url(bag2.png);
+        }
+        .img-7 {
+            background-image: url(skirt.png);
+        }
+        .img-8 {
+            background-image: url(sandals3png.png);
+        }
+        .img-1, .img-2, .img-3, .img-4, .img-5, .img-6, .img-7, .img-8 {
+            width: 100%;
+            height: 300px;
+            background-size: cover;
+            transition: .15s ease-in-out;
+            position: relative;
+            overflow: hidden;
+        }
+        .img-8:hover {
+            background-image: url(sandals3.png);
+            transition: .15s ease-in-out;
+        }
+        .card-content {
+            line-height: 7px;
+        }
+        .card-content h4 {
+            font-size: 13px;
+        }
+        .card-content h4, .card-content span {
+            color: gray;
+            font-weight: 500;
+        }
+        .card-content h3 {
+            margin-bottom: 17px;
+            font-size: 16px;
+            font-weight: 500;
+            color: black;
+        }
+        .card-content s {
+            font-size: 14px;
+        }
+        .card-content span span {
+            color: orangered;
+        }
+        a {
+            text-decoration: none;
+        }
+        .card h6 {
+            position: absolute;
+            background-color: white;
+            color: black;
+            padding: 3px 12px 3px 12px;
+            font-size: 11px;
+            font-weight: 500;
+        }
+        .card:nth-of-type(3n) h6 {
+            background-color: black;
+            color: white;
+        }
+        .card:nth-last-of-type(1) h6 {
+            background-color: white;
+            color: black;
+        }
+        .img-icons {
+            position: absolute;
+            bottom: -50px;
+            left: 25%;
+            transition: .2s ease-in-out;
+        }
+        .img-icons button{
+            border: none;
+            background-color: white;
+            padding: 12px;
+            border-radius: 50px;
+            font-size: 13px;
+            cursor: pointer;
+        }
+        .img-icons button:hover {
+            background-color: orangered;
+            color: white;
+        }
+        .img-1:hover .img-icons, .img-2:hover .img-icons, .img-3:hover .img-icons, .img-4:hover .img-icons, .img-5:hover .img-icons, .img-6:hover .img-icons, .img-7:hover .img-icons, .img-8:hover .img-icons {
+            bottom: 20px;
+            transition: .2s ease-in-out;
+        }
+
+        @media screen and (orientation: portrait) {
+            .cards {
+                display: grid;
+                grid-template-columns: 6fr 6fr;
+                gap : 30px;
+            }
+            .img-1, .img-2, .img-3, .img-4, .img-5, .img-6, .img-7, .img-8 {
+                width: 100%;
+                height: 190px;
+            }
+            .img-icons {
+                left: 20%;
+            }
+        }
+    </style>
+</head>
+<body>
+        <div class="cards">
+            <div class="card">
+                <a href="">
+                    <div class="img-1">
+                        <h6>NEW</h6>
+                        <div class="img-icons">
+                            <button><span class="bi bi-eye"></span></button>
+                            <button><span class="bi bi-cart"></span></button>
+                            <button><span class="bi bi-heart"></span></button>
+                        </div>
+                    </div>
+                </a>
+                <div class="card-content">
+                    <a href=""><h4>Shoes</h4></a>
+                    <a href=""><h3>Leather mid-heel Sandals</h3></a>
+                    <span>$129.00</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <a href="">
+                    <div class="img-2">
+                        <div class="img-icons">
+                            <button><span class="bi bi-eye"></span></button>
+                            <button><span class="bi bi-cart"></span></button>
+                            <button><span class="bi bi-heart"></span></button>
+                        </div>
+                    </div>
+                </a>
+                <div class="card-content">
+                    <a href=""><h4>Dresses</h4></a>
+                    <a href=""><h3>Cotton floral pink Dress</h3></a>
+                    <span>$40.00</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <a href="">
+                    <div class="img-3">
+                        <h6>SALE</h6>
+                        <div class="img-icons">
+                            <button><span class="bi bi-eye"></span></button>
+                            <button><span class="bi bi-cart"></span></button>
+                            <button><span class="bi bi-heart"></span></button>
+                        </div>
+                    </div>
+                </a>
+                <div class="card-content">
+                    <a href=""><h4>Shoes</h4></a>
+                    <a href=""><h3>Leather Sneakers</h3></a>
+                    <span><s>$85.00</s> <span>$85.00</span></span>
+                </div>
+            </div>
+
+            <div class="card">
+                <a href="">
+                    <div class="img-4">
+                        <div class="img-icons">
+                            <button><span class="bi bi-eye"></span></button>
+                            <button><span class="bi bi-cart"></span></button>
+                            <button><span class="bi bi-heart"></span></button>
+                        </div>
+                    </div>
+                </a>
+                <div class="card-content">
+                    <a href=""><h4>Tops</h4></a>
+                    <a href=""><h3>Cropped cotton Top</h3></a>
+                    <span>$29.00</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <a href="">
+                    <div class="img-5">
+                        <div class="img-icons">
+                            <button><span class="bi bi-eye"></span></button>
+                            <button><span class="bi bi-cart"></span></button>
+                            <button><span class="bi bi-heart"></span></button>
+                        </div>
+                    </div>
+                </a>
+                <div class="card-content">
+                    <a href=""><h4>Dresses</h4></a>
+                    <a href=""><h3>Floral print midi Dress</h3></a>
+                    <span>$50.00</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <a href="">
+                    <div class="img-6">
+                        <h6>SALE</h6>
+                        <div class="img-icons">
+                            <button><span class="bi bi-eye"></span></button>
+                            <button><span class="bi bi-cart"></span></button>
+                            <button><span class="bi bi-heart"></span></button>
+                        </div>
+                    </div>
+                </a>
+                <div class="card-content">
+                    <a href=""><h4>Bags</h4></a>
+                    <a href=""><h3>Suede cross body Bag</h3></a>
+                    <span><s>$79.00</s> <span>$49.00</span></span>
+                </div>
+            </div>
+
+            <div class="card">
+                <a href="">
+                    <div class="img-7">
+                        <div class="img-icons">
+                            <button><span class="bi bi-eye"></span></button>
+                            <button><span class="bi bi-cart"></span></button>
+                            <button><span class="bi bi-heart"></span></button>
+                        </div>
+                    </div>
+                </a>
+                <div class="card-content">
+                    <a href=""><h4>Skirts</h4></a>
+                    <a href=""><h3>Printed A-line Skirt</h3></a>
+                    <span>$79.00</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <a href="">
+                    <div class="img-8">
+                        <h6>NEW</h6>
+                        <div class="img-icons">
+                            <button><span class="bi bi-eye"></span></button>
+                            <button><span class="bi bi-cart"></span></button>
+                            <button><span class="bi bi-heart"></span></button>
+                        </div>
+                    </div>
+                </a>
+                <div class="card-content">
+                    <a href=""><h4>Shoes</h4></a>
+                    <a href=""><h3>Heel strappy Sandals</h3></a>
+                    <span>$79.00</span>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
